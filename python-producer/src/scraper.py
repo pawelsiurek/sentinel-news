@@ -5,7 +5,6 @@ from schemas import NewsAlert
 RSS_FEED_URL = "https://finance.yahoo.com/news/rss"
 
 def fetch_latest_news():
-    
     print(f"Fetching latest news from {RSS_FEED_URL}...", flush=True)
     feed = feedparser.parse(RSS_FEED_URL)
     
